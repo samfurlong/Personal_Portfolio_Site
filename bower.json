@@ -1,0 +1,19 @@
+{
+  "name": "Samuel Furlong Portfolio",
+  "version": "0.0.1",
+  "homepage": "https://github.com/",
+  "authors": [
+    "samuelfurlong <samfurlong1@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4"
+  }
+}

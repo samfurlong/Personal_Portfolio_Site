@@ -1,2 +1,7 @@
 .DS_Store
 node_modules
+src/_vendor
+web
+
+src/js
+src/css
