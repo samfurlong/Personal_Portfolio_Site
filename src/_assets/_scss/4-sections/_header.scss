@@ -1,7 +1,3 @@
-body{
-	margin-top: $header-height;
-}
-
 .header{
 	background: $dark-opacity;
 	height: $header-height;
@@ -15,7 +11,7 @@ body{
 		width: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
-	}
+	} // .header-wrap
 
 	.header-logo{
 		cursor: pointer;
@@ -28,25 +24,23 @@ body{
 		img{
 			width: $header-logo-width;
 			height: $header-logo-height;
-		}
+		} // img
 
 		&:hover{
 			opacity: .7;
-		}
+		} // &:hover
 
-	}
+	} // .header-logo
 
 	.header-menu{
 		display: inline-block;
 		float: right;
-		// background: green;
 		padding-top: $header-height-padding-top;
 		margin-right: em(15);
 
 		.header-menu-item{
 			display: inline-block;
 			float: left;
-		// background: red;
 
 
 			padding-right: em(15);
@@ -59,15 +53,15 @@ body{
 
 				&:hover{
 					opacity: .7;
-				}
-			}
+				} // &:hover
+			} // a
 
 			// About Button
 			&:first-child{
 				@media (max-width:  em(480) ){
 					display: none;
-				}
-			}
+				} // max width
+			} // &:first-child
 
 			// Linkedin Button
 			&:last-child{
@@ -79,10 +73,10 @@ body{
 					// margin-top: em(2);
 					width: em(36);
 					height: em(36);
-				}
-			}
+				} // img
+			} // &:last-child
 			
-		}
+		} // .header-menu-item
 
-	}
-}
+	} // .header-menu
+} // .header
