@@ -1,3 +1,10 @@
+#-------------------------------
+# General Site Settings
+
+title: Samuel Furlong
+description: Samuel Furlong's Personal Portfolio
+email: samfurlong1@gmail.com
+
 name: Samuel Furlong Portfolio
 source: src
 destination: web
