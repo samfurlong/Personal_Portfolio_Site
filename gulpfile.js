@@ -65,7 +65,7 @@ gulp.task('sass', function () {
             console.error('Error!', err.message);
         })
         .pipe(sass())
-        .pipe(prefix(['last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'], { cascade: true }))
+        .pipe(prefix())
         .pipe(gulp.dest('web/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest(basePath + '/css'))
