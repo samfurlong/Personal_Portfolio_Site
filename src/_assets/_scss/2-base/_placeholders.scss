@@ -84,9 +84,10 @@
 }
 
 %hero-position-mobile {
-	height: $hero-height-mobile;
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;	
+	height: $hero-height-mobile;
+	
 }
