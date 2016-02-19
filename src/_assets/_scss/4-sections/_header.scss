@@ -1,10 +1,11 @@
 .header{
-	background: $dark-opacity;
+	background: $dark-opacity-darker;
 	height: $header-height;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 10;
 
 	.header-wrap{
 		height: $header-height;
@@ -43,9 +44,9 @@
 			float: left;
 
 
-			padding-right: em(15);
-			margin: em(12) em(13) 0 0;
-			border-right: 1px $white solid;
+			padding-right: em(13);
+			margin: em(12) em(11) 0 0;
+			border-right: 2px $white solid;
 
 			a{
 				@extend %font-header;
@@ -66,6 +67,7 @@
 			// Linkedin Button
 			&:last-child{
 				padding: 0;
+				padding-top: em(2);
 				margin: 0;
 				border: none;
 

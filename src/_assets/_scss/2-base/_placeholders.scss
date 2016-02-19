@@ -1,3 +1,6 @@
+// 
+// Font
+// 
 %font-header {
   font-family: $font-family;
 	font-size: $font-px-md;
@@ -61,4 +64,29 @@
 	font-size: $font-px-xxsm;
 	color: $blue;
 	line-height: em(15);
+}
+
+// 
+// Hero
+// 
+%hero-bg-image {
+	background-image: $img-header-bg;
+	background-repeat: no-repeat, no-repeat;
+	background-size:  cover;
+	background-position: 50% 50%;	
+}
+
+%hero-main-logo {
+	background-image: $img-personal-logo;
+	background-repeat: no-repeat, no-repeat;
+	background-size:  cover;
+	background-position: 50% 50%;	
+}
+
+%hero-position-mobile {
+	height: $hero-height-mobile;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;	
 }

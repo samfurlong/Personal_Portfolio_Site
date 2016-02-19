@@ -4,10 +4,18 @@
 $white: #FFFFFF;
 $dark: #333333;
 $dark-opacity: rgba(51,51,51,0.8);
+$dark-opacity-darker: rgba(51,51,51,0.9);
 $dark-light: #666666;
 $grey: #F5F4F4;
 $blue: #408AC3;
 $linkedin-blue: #007bb5;
+
+// 
+// Images
+// 
+$img-header-bg: url("/img/Header-BG.png");
+$img-personal-logo: url("/img/Personal-Logo.svg");
+
 
 
 // 
@@ -33,6 +41,16 @@ $font-px-xxlg: em(36);
 // Header
 // 
 $header-height: em(56);
-$header-height-padding-top: em(8);
+$header-height-padding-top: em(6);
 $header-logo-width: em(50);
 $header-logo-height: em(38);
+
+
+// 
+// Hero
+// 
+$hero-height-mobile: em(380);
+
+
+
+

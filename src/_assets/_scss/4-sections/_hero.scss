@@ -1,8 +1,21 @@
 .hero{
-	background: $dark-opacity;
-	margin: 0;
-	
+	@extend %hero-bg-image;
+	@extend %hero-position-mobile;
+
 	.hero-overlay{
-		
+		background: $dark-opacity;
+		@extend %hero-position-mobile;
+	
+		.hero-main-logo{
+			width: em(272);
+			height: em(116);
+			margin: em(140) auto;
+			// background: red;
+			@extend %hero-main-logo;
+		}
 	}
+}
+
+.after-hero{
+	margin-top: $hero-height-mobile;
 }
