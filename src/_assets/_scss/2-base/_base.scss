@@ -9,8 +9,10 @@ h2{
 	@extend %font-h2;
 }
 
-h4{
+h3{
 	@extend %font-h4;
+	text-align: center;
+	padding-top: $margin-md;
 }
 
 p{
@@ -19,4 +21,8 @@ p{
 
 p .small-p{
 	@extend %font-body;
+}
+
+.section-alt{
+	background: $grey;
 }

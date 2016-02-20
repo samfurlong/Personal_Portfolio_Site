@@ -11,12 +11,16 @@ $blue: #408AC3;
 $linkedin-blue: #007bb5;
 
 // 
+// Padding and Margins
+// 
+$margin-md: em(20);
+$margin-lg: em(30);
+
+// 
 // Images
 // 
 $img-header-bg: url("/img/Header-BG.png");
 $img-personal-logo: url("/img/Personal-Logo.svg");
-
-
 
 // 
 // Fonts
@@ -53,6 +57,8 @@ $hero-height-mobile: em(380);
 $hero-height-tablet: em(400);
 $hero-height-desktop: em(500);
 
-
-
+// 
+// About
+// 
+$avatar-size-sm: em(150);
 
