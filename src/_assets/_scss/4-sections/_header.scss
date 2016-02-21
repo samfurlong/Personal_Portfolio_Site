@@ -28,7 +28,7 @@
 		} // img
 
 		&:hover{
-			opacity: .7;
+			opacity: $font-link-opacity;
 		} // &:hover
 
 	} // .header-logo
@@ -53,13 +53,13 @@
 				cursor: pointer;
 
 				&:hover{
-					opacity: .7;
+					opacity: $font-link-opacity;
 				} // &:hover
 			} // a
 
 			// About Button
 			&:first-child{
-				@media (max-width:  em(480) ){
+				@media (max-width: $bp-mobile-landscape ){
 					display: none;
 				} // max width
 			} // &:first-child

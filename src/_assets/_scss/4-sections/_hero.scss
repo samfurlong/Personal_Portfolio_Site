@@ -21,7 +21,7 @@
 	margin-top: $hero-height-mobile;
 }
 
-@media (min-width:  em(620) ){
+@media (min-width:  $bp-mobile-landscape-lg ){
 	.hero{
 		height: $hero-height-tablet;
 		.hero-overlay{
@@ -39,7 +39,7 @@
 	}
 } // max width
 
-@media (min-width:  em(800) ){
+@media (min-width: $bp-tablet ){
 	.hero{
 		height: $hero-height-desktop;
 		.hero-overlay{
