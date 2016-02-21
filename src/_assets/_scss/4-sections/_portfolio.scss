@@ -10,7 +10,8 @@
 	height: 200px;
 	background: $white;
 	border-radius: 2px;
-	padding-top: 10px
+	padding-top: 10px;
+	@extend %outer-shadow;
 
 }	
 
