@@ -1,0 +1,129 @@
+//body {
+//  font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+//  color: #333333;
+//}
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+$col-3-width: 31.88%;
+$col-3-margin-right: 1.5%;
+$col-3-breakpoint: em(1000);
+
+$col-2-width: 48.12%;
+$col-2-margin-right: 1.5%;
+$col-2-breakpoint: em(670);
+
+
+.portfolio-item-wrapper{
+  
+  @media (min-width: $col-2-breakpoint ){
+		width: $col-2-width;
+    margin-right: $col-2-margin-right;
+    display: inline-block;
+     vertical-align: top;
+    &::nth-child(2n+2) {
+      margin-right: 0px;
+    }
+	}
+  
+  @media (min-width: $col-3-breakpoint ){
+		width: $col-3-width;
+    margin-right: $col-3-margin-right;
+    display: inline-block;
+    vertical-align: top;
+    &::nth-child(2n+2) {
+      margin-right: $col-3-margin-right;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 0px;
+    }
+	}
+  
+}
+
+
+
+
+
+.col{
+  width: 25%;
+  height: 1000px;
+}
+
+.portfolio-item-link{
+  text-decoration: none;
+}
+
+
+  .portfolio-item{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+    background: white;
+    
+    &:hover{
+      box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.5);
+      transition: all 0.1s ease-in-out;
+      }
+    
+    .portfolio-img{
+      margin: 0 auto;
+      width: 90%;
+      height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      
+      
+  
+    }
+    
+    .portfolio-text{
+      margin: 10px auto;
+      padding-bottom: 10px;
+      width: 90%;
+      
+      
+      h3{
+        margin: 0;
+        font-size: 18px;
+        color: #333333;
+        line-height: 20px;
+      }
+      ul{
+        padding: 0;
+        list-style: none;
+        margin: 0 0 0 0;
+        font-size: 14px;
+        color: #333333;
+        line-height: 20px;
+        li{
+          background: #F5F4F4;
+          padding: 4px 5px 5px 5px;
+          border-radius: 6px;
+          box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+          margin: 0px 10px 10px 0px;
+          display: inline-block;
+          
+        }
+      }
+      p{
+        margin: 0px 0 0 0;
+        font-size: 14px;
+        color: #408AC3;
+        line-height: 20px;
+        text-align: right;
+        &:hover {
+            color: darken(#408AC3, 20); 
+        }
+      }
+      
+    }
+  }
+
+
